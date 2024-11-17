@@ -1,0 +1,6 @@
+#!/bin/bash
+
+volume=$1
+path=$2
+
+docker run -it --rm -v $volume:/vol busybox vi /vol$path
